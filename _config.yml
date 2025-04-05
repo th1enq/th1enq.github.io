@@ -152,14 +152,17 @@ paginate: 10
 # The base URL of your site
 baseurl: ""
 
+# markdown: redcarpet # kramdown, redcarpet, commonmarker
+
 # ------------ The following options are not recommended to be modified ------------------
 
 kramdown:
   footnote_backlink: "&#8617;&#xfe0e;"
   syntax_highlighter: rouge
+  input: GFM # GitHub Flavored Markdown
   syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
     css_class: highlight
-    # default_lang: console
+    default_lang: python
     span:
       line_numbers: false
     block:

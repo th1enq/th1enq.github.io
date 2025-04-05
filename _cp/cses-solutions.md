@@ -5,7 +5,7 @@ type: cp
 linkSection: https://cses.fi/problemset/user/320719/
 description: My journey through the CSES Problem Set - a collection of competitive programming problems. This is a long-term adventure where I solve algorithmic problems, learn new concepts, and improve my problem-solving skills.
 maxProblem: 300
-doneProblem: 100
+doneProblem: 4
 category: [Dynamic Programming, Graph Algorithms, Tree Algorithms, Mathematics, String Algorithms]
 ---
 
@@ -13,7 +13,6 @@ category: [Dynamic Programming, Graph Algorithms, Tree Algorithms, Mathematics, 
   <div class="header-section">
     <div class="flex items-center justify-between mb-8">
       <h1 class="title">CSES Solutions</h1>
-      <div class="progress-text">2/300 problems solved</div>
     </div>
 
     <div class="description-box">
@@ -23,7 +22,7 @@ category: [Dynamic Programming, Graph Algorithms, Tree Algorithms, Mathematics, 
     </div>
   </div>
 
-  {% assign categories = "introduce,advanced" | split: "," %}
+  {% assign categories = "introduce" | split: "," %}
   {% for category in categories %}
     <div class="solutions-section">
       <div class="category-section">

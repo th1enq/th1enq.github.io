@@ -1,7 +1,7 @@
 ---
 layout: default
 icon: fab fa-github
-order: 2
+order: 3
 ---
 
 <div class="projects-container">

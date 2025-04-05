@@ -1,0 +1,184 @@
+---
+title: CSES Problem Set
+layout: cses-page
+type: cp
+linkSection: https://cses.fi/problemset/user/320719/
+description: My journey through the CSES Problem Set - a collection of competitive programming problems. This is a long-term adventure where I solve algorithmic problems, learn new concepts, and improve my problem-solving skills.
+maxProblem: 300
+doneProblem: 100
+category: [Dynamic Programming, Graph Algorithms, Tree Algorithms, Mathematics, String Algorithms]
+---
+
+<div class="solutions-container">
+  <div class="header-section">
+    <div class="flex items-center justify-between mb-8">
+      <h1 class="title">CSES Solutions</h1>
+      <div class="progress-text">2/300 problems solved</div>
+    </div>
+
+    <div class="description-box">
+      <p>
+        The CSES Problemset is a collection of competitive programming problems that I'm trying to solve. This page contains my approaches, solutions and explanations to the problems I've solved.
+      </p>
+    </div>
+  </div>
+
+  {% assign categories = "introduce,advanced" | split: "," %}
+  {% for category in categories %}
+    <div class="solutions-section">
+      <div class="category-section">
+        <h2>{{ category | capitalize }} Problems</h2>
+        <div class="solutions-grid">
+          {% assign solutions = site.pages | where: "category", category | sort: "date" | reverse %}
+          {% for solution in solutions %}
+            <div class="solution-item">
+              <a href="{{ solution.url | relative_url }}" class="solution-link">
+                <div class="solution-content">
+                  <h3>{{ solution.title }}</h3>
+                  <div class="solution-date">{{ solution.date | date: "%b %d, %Y" }}</div>
+                </div>
+              </a>
+              <a href="https://cses.fi/problemset/task/{{ solution.problem_id }}" class="view-solution" target="_blank">
+                View Problem <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+<style>
+.solutions-container {
+  max-width: 56rem;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+.header-section {
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #e4e4e7;
+  margin: 0;
+}
+
+.progress-text {
+  color: #3B82F6;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.description-box {
+  background: rgba(24, 24, 27, 0.3);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.description-box p {
+  color: rgba(209, 213, 219, 0.7);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.category-section {
+  margin-bottom: 2rem;
+}
+
+.category-section h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #e4e4e7;
+  margin-bottom: 1rem;
+}
+
+.solutions-grid {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.solution-item {
+  background: rgb(24, 24, 27);
+  border: 1px solid rgba(63, 63, 70, 0.4);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: border-color 0.2s ease;
+}
+
+.solution-item:hover {
+  border-color: rgba(59, 130, 246, 0.4);
+}
+
+.solution-link {
+  flex: 1;
+  text-decoration: none;
+  color: inherit;
+}
+
+.solution-link:hover {
+  text-decoration: none;
+}
+
+.solution-content {
+  flex: 1;
+}
+
+.solution-content h3 {
+  color: #e4e4e7;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.solution-date {
+  color: #71717a;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.view-solution {
+  color: #3B82F6;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-left: 1rem;
+}
+
+.view-solution:hover {
+  color: #60A5FA;
+  text-decoration: none !important;
+}
+
+.view-solution .fa-external-link-alt {
+  font-size: 0.75rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+</style>

@@ -7,6 +7,14 @@
   icon: "fab fa-facebook"
   url: "https://www.facebook.com/th1enq/"
 
+- type: linkedin
+  icon: "fab fa-linkedin" # icons powered by <https://fontawesome.com/>
+  url: "https://www.linkedin.com/in/th1enq/" # Fill with your Linkedin homepage
+
+- type: instagram
+  icon: "fab fa-instagram"
+  url: "https://www.instagram.com/th1enq.__/"
+
 - type: email
   icon: "fas fa-envelope"
   noblank: true # open link in current tab
@@ -20,9 +28,6 @@
 #   icon: 'fab fa-mastodon'   # icons powered by <https://fontawesome.com/>
 #   url:  ''                  # Fill with your Mastodon account page, rel="me" will be applied for verification
 #
-- type: linkedin
-  icon: "fab fa-linkedin" # icons powered by <https://fontawesome.com/>
-  url: "https://www.linkedin.com/in/th1enq/" # Fill with your Linkedin homepage
 #               # Fill with your stackoverflow homepage
 #
 # - type: bluesky

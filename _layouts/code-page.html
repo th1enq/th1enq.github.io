@@ -1,0 +1,14 @@
+---
+layout: post
+---
+
+<div class="post">
+  <aside class="sidebar">
+    <!-- Thanh contents -->
+    {{ content | toc }}
+  </aside>
+
+  <div class="post-content">{{ content }}</div>
+</div>
+
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />

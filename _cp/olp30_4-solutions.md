@@ -2,6 +2,7 @@
 title: Olpympic 30/4 2025 Khối 11
 layout: cses-page
 type: cp
+linkSection: https://codeforces.com/gym/601507
 description: Lời giải đề thi Olympic 30/4 2025 môn Tin học khối 11
 maxProblem: 3
 doneProblem: 3

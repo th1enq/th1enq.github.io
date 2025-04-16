@@ -98,8 +98,7 @@ theme_mode: dark
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "https://scontent.fhan2-3.fna.fbcdn.net/v/t39.30808-6/487997097_2009968459487178_7875121836345248003_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=Nmq69Kwch8UQ7kNvwHvhBX_&_nc_oc=AdmbDqE-dCuP_byiqf72K4K2GS6DoN4iVjiL8LfSJg5fUAxFA-yWUGdLvFmAt-_m6Vg&_nc_zt=23&_nc_ht=scontent.fhan2-3.fna&_nc_gid=K534U0vd5coCQzIEIb8e3A&oh=00_AYFMCUVYCV-U9rJkRgrQq3cOvfNToZ1xC64rzRcvqj896A&oe=67F5D0B0"
-
+avatar: "assets/img/avatar.png"
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
 social_preview_image: # string, local or CORS resources

@@ -5,6 +5,9 @@ icon: fas fa-info-circle
 order: 7
 ---
 
+<!-- Add Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 <div class="id-card-wrapper">
   <div class="lanyard">
     <div class="lanyard-string left"></div>
@@ -91,6 +94,7 @@ order: 7
 </div>
 
 <style>
+/* Add base styles first */
 :root {
   --card-width: 350px;
   --card-height: 550px;
@@ -122,6 +126,7 @@ order: 7
   --skill-fill-color: #3498db;
 }
 
+/* Ensure styles are scoped to the card */
 .id-card-wrapper {
   display: flex;
   justify-content: center;
@@ -130,6 +135,9 @@ order: 7
   padding: 80px 20px 40px;
   position: relative;
   min-height: 600px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .lanyard {
@@ -473,6 +481,7 @@ order: 7
 </style>
 
 <script>
+// Ensure script runs after DOM is fully loaded
 document.addEventListener('DOMContentLoaded', function() {
   // Check for dark mode
   const isDarkMode = document.body.classList.contains('dark') || 
@@ -483,20 +492,18 @@ document.addEventListener('DOMContentLoaded', function() {
     document.documentElement.classList.add('dark');
   }
   
-  // Card flip functionality
+  // Initialize card
   const card = document.querySelector('.id-card');
-  let isFlipped = false;
+  if (!card) return; // Safety check
   
-  // Variables for dragging
+  let isFlipped = false;
   let isDragging = false;
   let startX, startY;
   let initialRotation = { x: 0, y: 0, z: 0 };
   let currentRotation = { x: 0, y: 0, z: 0 };
-  
-  // Physics variables
   let velocity = { x: 0, y: 0, z: 0 };
-  let damping = 0.96; // Adjusted for smoother movement
-  let springStrength = 0.2; // Increased for better return to center
+  let damping = 0.96;
+  let springStrength = 0.2;
   let lastTimestamp = 0;
   let animationId = null;
   

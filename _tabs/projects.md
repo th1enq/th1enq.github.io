@@ -10,22 +10,7 @@ order: 3
   <div class="projects-grid">
     {% assign projects = "" | split: "" %}
     
-    {% assign project1 = "" | split: "" | push: "Adventure Time" | push: "2D Indie Game built with SDL2 and C++." | push: "https://github.com/th1enq/Adventure-Time" | push: "SDL2,C++" %}
-    {% assign projects = projects | push: project1 %}
-    
-    {% assign project2 = "" | split: "" | push: "Library Management System" | push: "A simple library management system built with JavaFX." | push: "https://github.com/th1enq/Library-Management-System-JAVA" | push: "Java,JavaFX,MySQL,Google Books API" %}
-    {% assign projects = projects | push: project2 %}
-    
-    {% assign project3 = "" | split: "" | push: "CatShell" | push: "A simple shell built with Golang and C" | push: "https://github.com/th1enq/CatShell" | push: "Golang,C" %}
-    {% assign projects = projects | push: project3 %}
-    
-    {% assign project4 = "" | split: "" | push: "GoVibe" | push: "A simple social network built with Golang" | push: "https://github.com/th1enq/GoVibe" | push: "Golang,Docker,PostgreSQL,TailwindCSS,ReactJS" %}
-    {% assign projects = projects | push: project4 %}
-    
-    {% assign project5 = "" | split: "" | push: "dotfiles" | push: "My personal dotfiles configuration for Arch Linux using bspwm." | push: "https://github.com/th1enq/dotfiles" | push: "Shell,Python,Lua,Javascript,SCSS" %}
-    {% assign projects = projects | push: project5 %}
-
-    {% for project in projects %}
+       {% for project in projects %}
       {% assign title = project[0] %}
       {% assign description = project[1] %}
       {% assign github = project[2] %}
